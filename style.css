@@ -1,130 +1,130 @@
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  user-select: none;
+    margin: 0;
+    user-select: none;
 }
 
 .header-class {
-  height: 29vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  background-color: darkgoldenrod;
-  gap: 0;
+    height: 29vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: darkgoldenrod;
+    gap: 0;
 }
 
 .heading {
-  height: fit-content;
-  font-size: 1.6em;
-  color: white;
+    height: fit-content;
+    font-size: 1.6em;
+    color: white;
 }
 
 #color-code {
-  font-size: 3em;
+    font-size: 3em;
 }
 
 .nav-class {
-  background-color: #5cdb95;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10%;
-  height: 4.3vh;
+    background-color: #5cdb95;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    height: 4.3vh;
 }
 
 .nested {
-  display: flex;
-  justify-content: space-between;
-  width: fit-content;
-  align-items: center;
-  gap: 10px;
-}
-
-.item {
-  color: darkred;
-  background-color: #8ee4af;
-  cursor: pointer;
-  border: 2px solid black;
-  border-radius: 6px;
-  padding: 0.1%;
-}
-
-.item:hover {
-  color: white;
-  background-color: darkred;
-}
-
-.item:active {
-  background-color: #b22222;
-  border-radius: 7px;
-}
-
-.main-content {
-  background-color: #282a36;
-  width: 100%;
-  min-height: 66.7vh;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-}
-
-.color-zone {
-  padding-top: 3%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10%;
-}
-
-.color-box {
-  display: block;
-  width: 6rem;
-  height: 6rem;
-  background-color: aliceblue;
-  border-radius: 8px;
-  opacity: 1;
-  transform: none;
-  transition: all 1s ease-in-out;
-  cursor: pointer;
-}
-
-.hidden {
-  display: none;
-}
-
-@media only screen and (max-width: 450px) {
-  .nav-class {
-    background-color: #5cdb95;
-
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10%;
-    height: 8.3vh;
-  }
-  .main-content {
-    background-color: #282a36;
-    width: 100%;
-    height: 62.7vh;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-  }
-  .nested {
-    display: flex;
-    flex-direction: column;
     justify-content: space-between;
     width: fit-content;
     align-items: center;
-    gap: 2px;
-  }
-  .color-zone {
+    gap: 10px;
+}
+
+.item {
+    color: darkred;
+    background-color: #8ee4af;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 6px;
+    padding: 0.1%;
+}
+
+.item:hover {
+    color: white;
+    background-color: darkred;
+}
+
+.item:active {
+    background-color: #b22222;
+    border-radius: 7px;
+}
+
+.main-content {
+    background-color: #282a36;
+    width: 100%;
+    min-height: 66.7vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.color-zone {
     padding-top: 3%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 10%;
-  }
+}
+
+.color-box {
+    display: block;
+    width: 6rem;
+    height: 6rem;
+    background-color: aliceblue;
+    border-radius: 8px;
+    opacity: 1;
+    transform: none;
+    transition: all 2s ease-in-out;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+@media only screen and (max-width: 450px) {
+    .nav-class {
+        background-color: #5cdb95;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10%;
+        height: 8.3vh;
+    }
+    .main-content {
+        background-color: #282a36;
+        width: 100%;
+        height: 62.7vh;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .nested {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: fit-content;
+        align-items: center;
+        gap: 2px;
+    }
+    .color-zone {
+        padding-top: 3%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10%;
+    }
 }
