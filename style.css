@@ -19,12 +19,12 @@ body {
 
 .heading {
     height: fit-content;
-    font-size: 1.6em;
+    font-size: 7vw;
     color: white;
 }
 
 #color-code {
-    font-size: 3em;
+    font-size: 10vw;
 }
 
 .nav-class {
@@ -51,6 +51,7 @@ body {
     border: 2px solid black;
     border-radius: 6px;
     padding: 0.1%;
+    font-size: 100%;
 }
 
 .item:hover {
@@ -126,5 +127,16 @@ body {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 10%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .heading {
+        height: fit-content;
+        font-size: 5vh;
+        color: white;
+    }
+    #color-code {
+        font-size: 10vh;
     }
 }
