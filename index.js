@@ -65,6 +65,10 @@ function easyClick() {
 function hardClick() {
     console.log(`isClickedHard: ${isClickedHard}`);
 
+    for (let i = 0; i < 6; i++) {
+        allBoxes[i].style.borderRadius = "8px";
+    }
+
     isEasy = false;
     for (let i = 0; i < 3; i++) {
         hiddenBoxes[i].style.display = "block";
